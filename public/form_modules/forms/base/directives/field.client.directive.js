@@ -85,7 +85,7 @@ angular.module('view-form').directive('fieldDirective', ['$http', '$compile', '$
 							break;
 						case 'email':
 							scope.input_type = 'email';
-							scope.placeholder = 'joesmith@example.com';
+							scope.placeholder = 'mail@example.com';
 							break;
 						case 'number':
 							scope.input_type = 'text';

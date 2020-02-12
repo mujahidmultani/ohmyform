@@ -5,16 +5,16 @@ LABEL maintainer="OhMyForm <admin@ohmyform.com>"
 RUN addgroup --gid 9999 ohmyform && adduser -D --uid 9999 -G ohmyform ohmyform
 
 # Install some needed packages
-RUN apk add --no-cache git=2.20.1-r0 python=2.7.16-r1 \
+RUN apk add --no-cache git=2.24.1-r0 python=2.7.16-r3 \
 	&& rm -rf /tmp/* \
-	&& npm install --quiet -g grunt@1.0.4 bower@1.8.8 pm2@3.5.1 \
+	&& npm install --quiet -g grunt@1.0.4 bower pm2@3.5.1 \
 	&& npm cache clean --force \
-	&& mkdir -p /opt/app/public/lib
+	&& mkdir -p /app/public/lib
 
 # to expose the public folder to other containers
-# VOLUME /opt/app
+# VOLUME /app
 
-WORKDIR /opt/app
+WORKDIR /app
 
 ## TODO: Find a method that's better than this for passing ENV's if possible.
 # Set default ENV

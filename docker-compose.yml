@@ -5,13 +5,11 @@ services:
     image: redis
   mongo:
     image: mongo
-    volumes:
-      - "./data/mongo:/data"
   ohmyform:
     image: ohmyform/ohmyform
-    #build: .
+    build: .
     #volumes:
-    #  - ".:/opt/app"
+    #  - .:/app
     environment:
       CREATE_ADMIN: "TRUE"
       SOCKET_URL: 'localhost:5000'
