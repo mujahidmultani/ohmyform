@@ -24,7 +24,7 @@ angular.module('forms').config(['$stateProvider',
 			controller: 'ListFormsController',
 			controllerAs: 'ctrl'
   		}).state('submitForm', {
-			url: '/forms/:formId',
+			url: '/mysurvey.sa/:formId',
 			templateUrl: '/static/form_modules/forms/base/views/submit-form.client.view.html',
 			data: {
 				hideNav: true

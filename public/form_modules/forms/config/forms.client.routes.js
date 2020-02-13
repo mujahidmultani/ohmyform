@@ -6,7 +6,7 @@ angular.module('view-form').config(['$stateProvider',
 		// Forms state routing
 		$stateProvider.
 		state('submitForm', {
-			url: '/forms/:formId',
+			url: '/mysurvey.sa/:formId',
 			templateUrl: '/static/form_modules/forms/base/views/submit-form.client.view.html',
 			resolve: {
 				Forms: 'Forms',

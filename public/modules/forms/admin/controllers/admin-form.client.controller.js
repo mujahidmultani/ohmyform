@@ -13,11 +13,11 @@ angular.module('forms').controller('AdminFormController', ['$rootScope', '$windo
 
         CurrentForm.setForm($scope.myform);
 
-        $scope.formURL = '/#!/forms/' + $scope.myform._id;
+        $scope.formURL = '/#!/mysurvey.sa/' + $scope.myform._id;
 
         if ($scope.myform.isLive) {
             if ($window.subdomainsDisabled === true) {
-                $scope.actualFormURL = window.location.protocol + '//' + window.location.host + '/view' + $scope.formURL;
+                $scope.actualFormURL = window.location.protocol + '//' + window.location.host +  $scope.formURL;
             } else {
                 if (window.location.host.split('.').length < 3) {
                     $scope.actualFormURL = window.location.protocol + '//' + $scope.myform.admin.username + '.' + window.location.host + $scope.formURL;
