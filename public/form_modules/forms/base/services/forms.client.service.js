@@ -26,3 +26,29 @@ angular.module('view-form').factory('Forms', ['$resource', 'VIEW_FORM_URL',
 		});
 	}
 ]);
+
+angular.module('view-form').factory('Forms2', ['$resource', 'VIEW_FORM_URL2',
+	function($resource, VIEW_FORM_URL2) {
+		return $resource(VIEW_FORM_URL2, {
+			formTitle: '@title'
+		}, {
+			'get' : {
+				method: 'GET',
+				transformResponse: function(data, header) {
+		          	var form = angular.fromJson(data);
+
+					form.visible_form_fields = _.filter(form.form_fields, function(field){
+		            	return (field.deletePreserved === false);
+		            });
+		          	return form;
+		        }
+			},
+			'update': {
+				method: 'PUT'
+			},
+			'save': {
+				method: 'POST'
+			}
+		});
+	}
+]);

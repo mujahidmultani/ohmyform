@@ -6,14 +6,14 @@ angular.module('view-form').config(['$stateProvider',
 		// Forms state routing
 		$stateProvider.
 		state('submitForm', {
-			url: '/mysurvey.sa/:formId',
+			url: '/mysurvey.sa/:formTitle',
 			templateUrl: '/static/form_modules/forms/base/views/submit-form.client.view.html',
 			resolve: {
-				Forms: 'Forms',
-				myForm: function (Forms, $q, $state, $stateParams) {
+				Forms2: 'Forms2',
+				myForm: function (Forms2, $q, $state, $stateParams) {
                     var deferred = $q.defer();
 
-                    Forms.get({formId: $stateParams.formId}).$promise.then(function(data) {
+                    Forms2.get({formTitle: $stateParams.formTitle}).$promise.then(function(data) {
                     	deferred.resolve(data);
 				    },  function(reason) {
                         $state.go('unauthorizedFormAccess');

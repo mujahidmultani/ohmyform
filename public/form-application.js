@@ -28,6 +28,9 @@ angular.module(ApplicationConfiguration.applicationModuleName).constant('USER_RO
 //form url
 angular.module(ApplicationConfiguration.applicationModuleName).constant('FORM_URL', '/forms/:formId');
 
+//form url
+angular.module(ApplicationConfiguration.applicationModuleName).constant('FORM_URL2', '/forms2/:formTitle');
+
 //Then define the init function for starting up the application
 angular.element(document).ready(function() {
 	//Fixing facebook bug with redirect

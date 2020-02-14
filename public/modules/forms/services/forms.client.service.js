@@ -31,3 +31,34 @@ angular.module('forms').factory('GetForms', ['$resource', 'FORM_URL',
 		});
 	}
 ]);
+
+angular.module('forms').factory('GetForms2', ['$resource', 'FORM_URL2',
+	function($resource, FORM_URL2) {
+		return $resource(FORM_URL2, {
+			formTitle: '@title'
+		}, {
+			'query' : {
+				method: 'GET',
+				url: '/forms2',
+				isArray: true
+			},
+			'get' : {
+				method: 'GET',
+				transformResponse: function(data, header) {
+		          	var form = angular.fromJson(data);
+
+					form.visible_form_fields = _.filter(form.form_fields, function(field){
+		            	return (field.deletePreserved === false);
+		            });
+		          	return form;
+		        }
+			},
+			'update': {
+				method: 'PUT'
+			},
+			'save': {
+				method: 'POST'
+			}
+		});
+	}
+]);

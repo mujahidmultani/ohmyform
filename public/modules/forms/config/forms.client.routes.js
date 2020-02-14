@@ -24,16 +24,16 @@ angular.module('forms').config(['$stateProvider',
 			controller: 'ListFormsController',
 			controllerAs: 'ctrl'
   		}).state('submitForm', {
-			url: '/mysurvey.sa/:formId',
+			url: '/mysurvey.sa/:formTitle',
 			templateUrl: '/static/form_modules/forms/base/views/submit-form.client.view.html',
 			data: {
 				hideNav: true
 			},
 			resolve: {
-				Forms: 'GetForms',
-				myForm: function (GetForms, $stateParams, $q) {
+				Forms2: 'GetForms2',
+				myForm: function (GetForms2, $stateParams, $q) {
 		           	var deferred = $q.defer();
-		           	GetForms.get({formId: $stateParams.formId}, function(resolvedForm){
+		           	GetForms2.get({formTitle: $stateParams.formTitle}, function(resolvedForm){
 		           		deferred.resolve(resolvedForm);
 					});
 

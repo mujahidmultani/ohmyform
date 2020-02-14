@@ -49,9 +49,14 @@ module.exports = function(app) {
 
 	app.route('/forms/:formId([a-zA-Z0-9]+)/visitors')
 		.get(auth.isAuthenticatedOrApiKey, forms.hasAuthorization, forms.getVisitorData);
+	
+		app.route('/forms2/:formTitle')
+		.get(forms.read);
 
 	// Slower formId middleware
 	app.param('formId', forms.formByID);
+
+	app.param('formTitle', forms.formByTitle);
 
 	// Fast formId middleware
 	app.param('formIdFast', forms.formByIDFast);

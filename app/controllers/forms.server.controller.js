@@ -488,10 +488,31 @@ exports.list = function(req, res) {
 		  });
 	});
 };
-
 /**
  * Form middleware
  */
+
+exports.formByTitle = function(req, res, next, id) {
+
+	var val=(id+"").replace("-"," ");
+	Form.findOne({title:{$regex : new RegExp(val, "i")}})
+		.select('admin title language form_fields startPage endPage showFooter isLive design analytics.gaCode respondentNotifications selfNotifications')
+		.populate('admin')
+		.exec(function(err, form) {
+		if (err) {
+			return next(err);
+		} else if (!form || form === null) {
+			res.status(404).send({
+				message: 'Form not found'
+			});
+		}
+		else {
+			req.form = form;
+			return next();
+		}
+	});
+};
+
 exports.formByID = function(req, res, next, id) {
 	if (!mongoose.Types.ObjectId.isValid(id)) {
 		return res.status(400).send({

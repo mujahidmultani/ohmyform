@@ -19,7 +19,7 @@ angular.module('view-form').directive('submitFormDirective', ['$http', 'TimeCoun
             },
             controller: function($document, $window, $scope){
                 var FORM_ACTION_ID = 'submit_field';
-                $scope.forms = {};
+                $scope.forms ={};
 
                 var form_fields_count = $scope.myform.visible_form_fields.filter(function(field){
                     return field.fieldType !== 'statement';
