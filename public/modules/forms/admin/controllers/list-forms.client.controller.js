@@ -7,6 +7,7 @@ angular.module('forms').controller('ListFormsController', ['$rootScope', '$scope
         $scope = $rootScope;
         $scope.forms = {};
         $scope.showCreateModal = false;
+        $scope.showTitleError=false;
         $scope.myforms = myForms;
         $scope.formLanguage = $window.$locale;
 
@@ -93,7 +94,16 @@ angular.module('forms').controller('ListFormsController', ['$rootScope', '$scope
             form.language = $scope.forms.createForm.language.$modelValue;
 
             if($scope.forms.createForm.$valid && $scope.forms.createForm.$dirty){
-                $http.post('/forms', {form: form})
+
+                var p=(form.title+"").replace(" ","-").toLowerCase();
+                $http.get('/forms2/'+p).then(function(response, status, headers){
+                    var title= response.data.title;
+                    if(title!=null||title){
+                        $scope.showTitleError=true;
+                        $scope.error="Title not avaiable."
+                    }
+                }, function(errorResponse){
+                    $http.post('/forms', {form: form})
                     .then(function(response, status, headers){
                         // Redirect after save
                         $state.go('viewForm.create', {formId: response.data.id}, {reload: true});
@@ -101,6 +111,9 @@ angular.module('forms').controller('ListFormsController', ['$rootScope', '$scope
                         console.error(errorResponse);
                         $scope.error = errorResponse.data.message;
                     });
+                });
+
+
             }
         };
 

@@ -295,7 +295,6 @@ exports.create = function(req, res) {
 			message: 'Invalid Input'
 		});
 	}
-
 	var form = new Form(req.body.form);
 	form.admin = req.user._id;
 
