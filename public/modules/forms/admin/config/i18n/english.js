@@ -69,10 +69,10 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 		//Share Tab
 		COPIED_LABEL: 'Copied',
 		COPY: 'Copy',
-		COPY_AND_PASTE: 'Copy and Paste this to add your OhMyForm to your website',
+		COPY_AND_PASTE: 'Copy and Paste this to add your MySurvay to your website',
 		CHANGE_WIDTH_AND_HEIGHT: 'Change the width and height values to suit you best',
 		POWERED_BY: 'Powered by',
-		OHMYFORM_URL: 'Your OhMyForm is permanently at this URL',
+		OHMYFORM_URL: 'Your MySurvay is permanently at this URL',
 
 		//Edit Form View
 		DISABLED: 'Disabled',
@@ -187,7 +187,7 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 	    FORM_SUCCESS: 'Form entry successfully submitted!',
 		REVIEW: 'Review',
 	    BACK_TO_FORM: 'Go back to Form',
-		EDIT_FORM: 'Edit this OhMyForm',
+		EDIT_FORM: 'Edit this MySurvay',
 		ADVANCEMENT: '{{done}} out of {{total}} answered',
 		CONTINUE_FORM: 'Continue to Form',
 		REQUIRED: 'required',

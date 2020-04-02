@@ -91,7 +91,7 @@ module.exports = function(db) {
     };
 
     res.locals.copyright = () => {
-      return '©OhMyForm '+(new Date().getFullYear());
+      return '©MySurvay '+(new Date().getFullYear());
     };
 
     next();

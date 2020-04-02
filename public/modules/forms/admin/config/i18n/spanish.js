@@ -69,9 +69,9 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 		// Share Tab
 		COPIED_LABEL: 'Copiado',
 		COPY: 'Copiar',
-		COPY_AND_PASTE: 'Copiar y pegar esto para agregar su OhMyForm a su sitio web',
+		COPY_AND_PASTE: 'Copiar y pegar esto para agregar su MySurvay a su sitio web',
 		POWERED_BY: 'Con la tecnlogía de',
-		OHMYFORM_URL: 'Tu OhMyForm está en esta URL permanente',
+		OHMYFORM_URL: 'Tu MySurvay está en esta URL permanente',
 
 		//Edit Form View
 		DISABLED: 'Deshabilitado',

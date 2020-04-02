@@ -14,7 +14,7 @@ export class RespondentNotifications {
   readonly fromEmails: string;
 
   @prop({
-    default: 'OhMyForm: Thank you for filling out this OhMyForm'
+    default: 'MySurvay: Thank you for filling out this MySurvay'
   })
   readonly subject: string;
 

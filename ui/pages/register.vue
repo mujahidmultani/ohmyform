@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/img/logo_white_small.png" alt="OhMyForm" />
+    <img src="../assets/img/logo_white_small.png" alt="MySurvay" />
 
     <b-form class="box" @submit="submit">
       <b-form-group label-for="username">

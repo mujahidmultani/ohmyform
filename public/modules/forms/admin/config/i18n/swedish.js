@@ -50,10 +50,10 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 		LIVE: 'Live',
 		PREVIEW: 'Förhandsvy',
 		COPY: 'Kopiera',
-		COPY_AND_PASTE: 'Kopiera och Klistra in detta för att lägga till din OhMyForm till din hemsida.',
+		COPY_AND_PASTE: 'Kopiera och Klistra in detta för att lägga till din MySurvay till din hemsida.',
 		CHANGE_WIDTH_AND_HEIGHT: 'Ändra bredd- och höjdvärden för att det ska passa dig bäst',
 		POWERED_BY: 'Genererad av',
-		OHMYFORM_URL: "Din OhMyForm är permanent på denna URL",
+		OHMYFORM_URL: "Din MySurvay är permanent på denna URL",
 
 		// Redigera Form-vy
 		DISABLED: 'Avaktiverat',
@@ -167,7 +167,7 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 		FORM_SUCCESS: 'Formulär framgångsrikt inskickat!',
 		REVIEW: 'Granska',
 		BACK_TO_FORM: 'Gå Tillbaka till Formulär',
-		EDIT_FORM: 'Redigera denna OhMyForm',
+		EDIT_FORM: 'Redigera denna MySurvay',
 		ADVANCEMENT: '{{done}} av {{total}} svarade',
 		CONTINUE_FORM: 'Fortsätt till Formulär',
 		REQUIRED: 'obligatorisk',

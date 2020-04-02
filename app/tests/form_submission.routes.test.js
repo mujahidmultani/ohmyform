@@ -68,7 +68,7 @@ describe('Form Submission Routes Unit tests', function() {
 				respondentNotifications: {
 					toField: mongoose.Types.ObjectId(),
 					fromEmails: 'john@smith.com',
-					subject: 'OhMyForm: Thank you for filling out this OhMyForm',
+					subject: 'MySurvay: Thank you for filling out this MySurvay',
 					htmlTemplate:'Hello, <br><br> We’ve received your submission. <br><br> Thank you & have a nice day!',
 					enabled: true
 				}

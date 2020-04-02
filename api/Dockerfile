@@ -1,5 +1,5 @@
 FROM node:10 AS builder
-MAINTAINER OhMyForm <admin@ohmyform.com>
+MAINTAINER MySurvay <admin@ohmyform.com>
 
 WORKDIR /usr/src/app
 
