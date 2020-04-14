@@ -17,7 +17,7 @@ module.exports = {
 	},
 	subdomainsDisabled: true,
 	app: {
-		title: 'MySurvay Test'
+		title: 'MySurvey Test'
 	},
 	sessionCookie: {
 		maxAge:  24 * 60 * 60 * 1000 // 24 hours

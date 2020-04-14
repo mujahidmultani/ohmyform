@@ -3,8 +3,8 @@
 // Init the application configuration module for AngularJS application
 var ApplicationConfiguration = (function() {
 	// Init module configuration options
-	var applicationModuleName = 'MySurvay-Form';
-	var applicationModuleVendorDependencies = ['duScroll', 'ui.select', 'ngSanitize', 'vButton', 'ngResource', 'MySurvay-Form.form_templates', 'ui.router', 'ui.bootstrap', 'pascalprecht.translate'];
+	var applicationModuleName = 'MySurvey-Form';
+	var applicationModuleVendorDependencies = ['duScroll', 'ui.select', 'ngSanitize', 'vButton', 'ngResource', 'MySurvey-Form.form_templates', 'ui.router', 'ui.bootstrap', 'pascalprecht.translate'];
 
 	// Add a new vertical module
 	var registerModule = function(moduleName, dependencies) {

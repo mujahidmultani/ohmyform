@@ -1,4 +1,4 @@
-# MySurvay
+# MySurvey
 
 > Opensource alternative to TypeForm
 

@@ -21,7 +21,7 @@ import { MailerModule } from "@nest-modules/mailer"
     MailerModule.forRoot({
       transport: 'smtp://localhost:1025',
       defaults: {
-        from:'"MySurvay" <noreply@ohmyform.com>',
+        from:'"MySurvey" <noreply@ohmyform.com>',
       }
     }),
     UserModule,

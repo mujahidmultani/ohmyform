@@ -8,7 +8,7 @@
 			socket: null
 		};
 
-		// Connect to MySurvay Socket.io server
+		// Connect to MySurvey Socket.io server
 		function connect() {
 			var url = '';
 			if($window.socketUrl && $window.socketPort){

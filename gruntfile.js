@@ -243,7 +243,7 @@ module.exports = function(grunt) {
 			},
 			forms: {
 				options: {
-					module: 'MySurvay-Form.form_templates'
+					module: 'MySurvey-Form.form_templates'
 				},
 				src: ['public/form_modules/**/views/**.html', 'public/form_modules/**/views/**/*.html'],
 				dest: 'public/dist/form_populate_template_cache.js'

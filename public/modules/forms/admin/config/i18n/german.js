@@ -69,9 +69,9 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 		//Share Tab
 		COPIED_LABEL: 'Kopiert',
 		COPY: 'Kopieren',
-		COPY_AND_PASTE: 'Kopieren und einfügen, um Ihre MySurvay auf Ihrer Website hinzuzufügen',
+		COPY_AND_PASTE: 'Kopieren und einfügen, um Ihre MySurvey auf Ihrer Website hinzuzufügen',
 		POWERED_BY: 'Unterstützt von',
-		OHMYFORM_URL: "Ihr MySurvay ist dauerhaft unter dieser URL",
+		OHMYFORM_URL: "Ihr MySurvey ist dauerhaft unter dieser URL",
 
 		// Formularansicht bearbeiten
 		DISABLED: 'Deaktiviert',
@@ -185,7 +185,7 @@ angular.module('forms').config(['$translateProvider', function ($translateProvid
 		FORM_SUCCESS: 'Formulareintrag erfolgreich gesendet!',
 		REVIEW: 'Überprüfung',
 		BACK_TO_FORM: 'Gehe zurück zu Formular',
-		EDIT_FORM: 'Bearbeiten Sie diese MySurvay',
+		EDIT_FORM: 'Bearbeiten Sie diese MySurvey',
 		ADVANCEMENT: '{{done}} von {{total}} wurde beantwortet',
 		CONTINUE_FORM: 'Weiter zum Formular',
 		REQUIRED: 'erforderlich',

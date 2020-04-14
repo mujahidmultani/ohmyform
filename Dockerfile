@@ -1,5 +1,5 @@
 FROM  node:10-alpine
-LABEL maintainer="MySurvay <admin@ohmyform.com>"
+LABEL maintainer="MySurvey <admin@ohmyform.com>"
 
 # Create a group and a user with name "ohmyform".
 RUN addgroup --gid 9999 ohmyform && adduser -D --uid 9999 -G ohmyform ohmyform
@@ -37,7 +37,7 @@ ENV NODE_ENV=development \
     ADMIN_EMAIL=admin@ohmyform.com \
     ADMIN_USERNAME=root \
     ADMIN_PASSWORD=root \
-    APP_NAME=MySurvay \
+    APP_NAME=MySurvey \
     APP_KEYWORDS="" \
     APP_DESC="" \
     COVERALLS_REPO_TOKEN="" \
@@ -54,5 +54,5 @@ RUN npm install --only=production \
 # Change to non-root privilege
 USER ohmyform
 
-# Run MySurvay server
+# Run MySurvey server
 CMD ["node", "server.js"]

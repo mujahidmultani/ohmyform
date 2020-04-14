@@ -10,6 +10,7 @@ services:
     build: .
     #volumes:
     #  - .:/app
+
     environment:
       CREATE_ADMIN: "TRUE"
       SOCKET_URL: 'localhost:5000'

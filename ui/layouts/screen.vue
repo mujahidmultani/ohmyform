@@ -8,7 +8,7 @@
       <nuxt-link to="/login">Login</nuxt-link>
       <nuxt-link to="/register">Register</nuxt-link>
       <nuxt-link to="/admin">Manage</nuxt-link>
-      <a href="https://ohmyform.com">MySurvay</a>
+      <a href="https://ohmyform.com">MySurvey</a>
     </div>
   </div>
 </template>

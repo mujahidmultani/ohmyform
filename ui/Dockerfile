@@ -1,5 +1,5 @@
 FROM node:10 AS builder
-MAINTAINER MySurvay <admin@ohmyform.com>
+MAINTAINER MySurvey <admin@ohmyform.com>
 
 WORKDIR /opt/app
 

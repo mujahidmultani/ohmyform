@@ -1,10 +1,10 @@
 <p align="center">
-  <a href="http://ohmyform.com/" target="blank"><img src="https://ohmyform.com/img/logo_text.svg" width="320" alt="MySurvay Logo" /></a>
+  <a href="http://ohmyform.com/" target="blank"><img src="https://ohmyform.com/img/logo_text.svg" width="320" alt="MySurvey Logo" /></a>
 </p>
 
 ## Description
 
-[MySurvay](https://github.com/ohmyforn) api backend
+[MySurvey](https://github.com/ohmyforn) api backend
 
 ## Installation
 

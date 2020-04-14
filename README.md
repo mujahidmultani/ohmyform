@@ -1,4 +1,4 @@
-# MySurvay 0.2.1
+# MySurvey 0.2.1
 
 
 <!-- TODO: Code Shelter maybe. -->
@@ -22,7 +22,7 @@ Moving over to Discord so that I can manage things without hassle.
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [MySurvay 0.2.1](#ohmyform-021)
+- [MySurvey 0.2.1](#ohmyform-021)
 	- [Table of Contents](#table-of-contents)
 	- [Features](#features)
 		- [Currently following features are implemented:](#currently-following-features-are-implemented)
@@ -46,7 +46,7 @@ Moving over to Discord so that I can manage things without hassle.
 	- Embeddable Forms
 	- Forms as a Service API
 
-<!-- TODO: Determine roadmap for MySurvay if it is to be different from MySurvay's roadmap. -->
+<!-- TODO: Determine roadmap for MySurvey if it is to be different from MySurvey's roadmap. -->
 <!-- ### On the Roadmap (Tentative pending [refactor](https://github.com/ohmyform/ohmyform/pull/1)) -->
 ### On the Roadmap for v1.0.0
 	- Implement encryption for all form data
@@ -63,16 +63,16 @@ Moving over to Discord so that I can manage things without hassle.
 <!-- TODO: add a CONTRIBUTING.md. -->
 ## How to Contribute
 
-Please checkout our [contributing guide](CONTRIBUTING.md) on ways to contribute to MySurvay.
+Please checkout our [contributing guide](CONTRIBUTING.md) on ways to contribute to MySurvey.
 
 ## Quickstart
 
-Follow documentation hosted on [MySurvay.com](http://ohmyform.com/docs/install/) it will be the main and hopefully only location to obtain the up to date documentation.
+Follow documentation hosted on [MySurvey.com](http://ohmyform.com/docs/install/) it will be the main and hopefully only location to obtain the up to date documentation.
 
 ## Where to get help
 
 [![Discord](https://img.shields.io/discord/595773457862492190.svg?label=Discord%20Chat)](https://discord.gg/Y2TTePM)
 
 ## Alternative Social
-[Twitter](https://twitter.com/MySurvay)
+[Twitter](https://twitter.com/MySurvey)
 [Instagram](https://www.instagram.com/ohmyform/)

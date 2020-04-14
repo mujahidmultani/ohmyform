@@ -2,14 +2,14 @@
 	"swagger": "2.0",
 	"info": {
 		"version": "1.0.0",
-		"title": "MySurvay API",
+		"title": "MySurvey API",
 		"contact": {
-			"name": "MySurvay Team",
+			"name": "MySurvey Team",
 			"email": "team@ohmyform.com"
 		}
 	},
 	"externalDocs": {
-		"description": "Find out how to host your own MySurvay instance.",
+		"description": "Find out how to host your own MySurvey instance.",
 		"url": "https://github.com/ohmyform/ohmyform"
 	},
 	"host": "api.ohmyform.com",

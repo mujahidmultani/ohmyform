@@ -18,7 +18,7 @@ async function bootstrap() {
   app.useGlobalInterceptors(new ClassSerializerInterceptor(app.get(Reflector)))
 
   const options = new DocumentBuilder()
-    .setTitle('MySurvay')
+    .setTitle('MySurvey')
     .setDescription('API documentation')
     .setVersion(pkg.version)
     .addBearerAuth()
