@@ -40,9 +40,9 @@
 
     <div class="row form-field-wrapper">
         <form name="forms.myForm" novalidate class="submission-form">
-            <div class="row">
+            <div class="row field-directive">
                 <img width="200px"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSc9Bx3sz7efnyMVXgEBc-JeUchJPrnOJze7JCw08GtRTbJdNDY">
+                    src="/public/modules/core/img/logo_roshn.svg">
             </div>
             <div ng-repeat="field in myform.form_fields" ng-if="!field.deletePreserved" id="{{field._id}}"
                 class="row field-directive" du-scrollspy="{{field._id}}">

@@ -6,7 +6,7 @@ services:
   mongo:
     image: mongo
   ohmyform:
-    image: ohmyform/ohmyform
+    #image: ohmyform/ohmyform
     build: .
     #volumes:
     #  - .:/app

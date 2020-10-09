@@ -5,7 +5,7 @@ LABEL maintainer="MySurvey <admin@ohmyform.com>"
 RUN addgroup --gid 9999 ohmyform && adduser -D --uid 9999 -G ohmyform ohmyform
 
 # Install some needed packages
-RUN apk add --no-cache git=2.24.1-r0 python=2.7.16-r3 \
+RUN apk add --no-cache git=2.24.3-r0 python=2.7.18-r0 \
 	&& rm -rf /tmp/* \
 	&& npm install --quiet -g grunt@1.0.4 bower pm2@3.5.1 \
 	&& npm cache clean --force \
